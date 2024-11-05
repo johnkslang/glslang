@@ -157,7 +157,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-13]
+        os: [macos-13, macos-14] # 13 has x86 and 14 has ARM
         compiler: [{cc: clang, cxx: clang++}]
         cmake_build_type: [Release]
     steps:
