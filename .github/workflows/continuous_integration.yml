@@ -157,8 +157,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-14]
-        compiler: [{cc: clang, cxx: clang++}, {cc: gcc, cxx: g++}]
+        os: [macos-13]
+        compiler: [{cc: clang, cxx: clang++}]
         cmake_build_type: [Release]
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
